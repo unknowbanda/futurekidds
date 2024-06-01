@@ -1,0 +1,1245 @@
+body {
+
+  margin: 0;
+  padding: 0;
+}
+
+/* Default styles */
+
+/* Navbar styles */
+.navbar {
+  /* overflow: hidden; */
+  background-color: white;
+  margin: 0;
+  /* Increase margin on top */
+  display: flex;
+  justify-content: center;
+  /* Center navbar items */
+  align-items: center;
+  z-index: 1;
+  transition: 0.3s;
+}
+
+.logo {
+  width: 132px;
+  height: 70px;
+}
+
+.navbar a {
+  color: black;
+  text-decoration: none;
+  padding: 14px 20px;
+  font-family: 'Chewy', cursive;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 4px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  transition: .33s;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+}
+
+/* Individual button colors */
+#home {
+  color: rgb(248, 89, 200);
+}
+
+
+#home:hover {
+  background-color: red;
+}
+
+#facilities {
+  color: skyblue;
+}
+
+#facilities:hover {
+  background-color: pink;
+}
+
+#activities {
+  color: red;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 4px;
+  transition: 0.3s;
+
+}
+
+#activities:hover {
+  background-color: blue;
+}
+
+#events {
+  color: rgb(90, 218, 250);
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+#events:hover {
+  background-color: green;
+}
+
+#gallery {
+  color: rgb(11, 194, 72);
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+#gallery:hover {
+  background-color: orange;
+}
+
+#news {
+  color: rgb(223, 164, 54);
+}
+
+#news:hover {
+  background-color: purple;
+}
+
+#admission {
+  color: red;
+}
+
+#admission:hover {
+  background-color: violet;
+}
+
+#contact {
+  color: rgb(248, 89, 200);
+}
+
+#contact:hover {
+  background-color: skyblue;
+}
+
+#franchise {
+  color: #9bf6ff;
+}
+
+#franchise:hover {
+  color: #9bf6ff;
+  background-color: #be1f1f;
+}
+
+#about:hover {
+  color: pink;
+  background-color: silver;
+  /* padding-top: 8px; */
+  /* padding-bottom: 8px; */
+  border-radius: 4px;
+}
+
+/* Dropdown container */
+.dropdown,
+.dropdownact,
+.dropdownev,
+.dropdowngl {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown button */
+.dropbtn,
+.dropbtnactact,
+.dropbtnactev,
+.dropbtnglgl {
+  font-size: 18px;
+  border: none;
+  outline: none;
+  font-family: 'Chewy', cursive;
+  margin: 0;
+  padding: 14px 20px;
+  color: #12b812;
+  background-color: inherit;
+}
+
+/* Dropdown content */
+.dropdown-content,
+.dropdown-contentact,
+.dropdown-contentev,
+.dropdown-contentgl {
+  display: none;
+  position: absolute;
+  background-color: white;
+
+  /* Set background color to white */
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  transition: 0.3s;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a,
+.dropdown-contentact a,
+.dropdown-contentev a,
+.dropdown-contentgl a {
+  color: rgb(238, 169, 20);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  transition: 0.3s;
+}
+
+/* Change color on hover inside dropdown */
+.dropdown-content a:hover,
+.dropdown-contentact a:hover,
+.dropdown-contentev a:hover,
+.dropdown-contentgl a:hover {
+  background-color: #be1f1f;
+  transition: 0.3s;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content,
+.dropdownact:hover .dropdown-contentact,
+.dropdownev:hover .dropdown-contentev,
+.dropdowngl:hover .dropdown-contentgl {
+  display: block;
+}
+
+/* Initially hide the dropdown content */
+.sub-dropdown-content {
+  display: none;
+  /* color: #be1f1f; */
+  background-color: pink;
+  position: absolute;
+  /* Absolute positioning for dropdown */
+  background-color: white;
+  /* Added background color */
+  min-width: 200px;
+  /* Ensures content box is wide enough */
+  z-index: 1;
+  /* Ensures dropdown content appears above other content */
+  left: 100%;
+  /* Position it to the right of the parent */
+  top: 0;
+  /* Align it at the top of the parent */
+}
+
+/* Display the dropdown content when hovering over the button or dropdown content */
+.sub-dropdown1:hover .sub-dropdown-content {
+  display: block;
+  background-color: green;
+  color: blue;
+  margin: 2px;
+  border-radius: 4px;
+}
+
+/* General styles for the sub-dropbtn */
+.sub-dropbtn {
+  list-style: none;
+  color: #be1f1f;
+  font-size: 16px;
+  padding-left: 2px;
+  margin-left: 2px;
+}
+
+/* Ensure main dropdown-content is displayed on hover */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Ensure the dropdown-content remains displayed when hovering over it */
+.dropdown-content:hover {
+  display: block;
+}
+
+
+
+.dropdown-contentp {
+  display: none;
+  position: absolute;
+  background-color: white;
+  padding-top: 5px;
+  /* margin-top: 5px; */
+
+  /* Set background color to white */
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  transition: 0.3s;
+
+}
+
+.dropdown-contentp a {
+  color: rgb(238, 169, 20);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  transition: 0.3s;
+}
+
+.dropdown-contentp a:hover {
+
+  background-color: #be1f1f;
+  transition: 0.3s;
+}
+
+.dropdown:hover .dropdown-contentp {
+  display: block;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  overflow: hidden;
+}
+
+.image-container img {
+  display: block;
+  width: 100%;
+  transition: transform 0.5s ease;
+}
+
+.aboutnew {
+  font-size: 22px;
+}
+
+
+/* Responsive styles for navbar */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .navbar a {
+    padding: 10px;
+    width: auto;
+  }
+
+  .dropdown,
+  .dropdownact,
+  .dropdownev,
+  .dropdowngl {
+    display: block;
+    position: static;
+    /* Change position to static for dropdowns */
+  }
+
+  .dropdown-content,
+  .dropdown-contentact,
+  .dropdown-contentev,
+  .dropdown-contentgl {
+    display: none;
+    position: static;
+    /* Change position to static for dropdown content */
+    background-color: white;
+    /* Set background color to white */
+    width: 100%;
+    /* Make dropdown content full width */
+    box-shadow: none;
+    /* Remove box shadow */
+    padding: 10px 0;
+    /* Add padding */
+    text-align: center;
+    /* Center align text */
+  }
+
+  .dropdown-content a,
+  .dropdown-contentact a,
+  .dropdown-contentev a,
+  .dropdown-contentgl a {
+    padding: 10px 20px;
+    /* Adjust padding */
+  }
+
+  .dropdown:hover .dropdown-content,
+  .dropdownact:hover .dropdown-contentact,
+  .dropdownev:hover .dropdown-contentev,
+  .dropdowngl:hover .dropdown-contentgl {
+    display: block;
+    /* Display dropdown content on hover */
+  }
+}
+
+.image-container img {
+  display: block;
+  height: 488x;
+  width: 650px;
+
+  margin: 0px 0px 0px 0px;
+  padding-top: 5px;
+
+
+}
+
+.aboutus {
+  background-color: #9bf6ff;
+  font-size: 19px;
+  padding-left: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-right: 10px;
+  border-radius: 4px;
+
+}
+
+#abh1 {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  background-color: rgba(135, 207, 235, 0.425);
+  color: red;
+  border-radius: 4px;
+  padding: 8px;
+  margin-top: 0;
+  height: 80px;
+  /* transition: background-color 3s ease-in-out, color 0.4s ease-in-out; */
+  transition: 2s;
+
+}
+
+#abh1:hover {
+  font-size: 22px;
+  background-color: purple;
+  color: white;
+  height: 300px;
+}
+
+#abh2 {
+  font-size: 30px;
+  text-align: center;
+  background-color: rgba(255, 166, 0, 0.719);
+  color: white;
+  border-radius: 4px;
+  padding: 8px;
+  margin-top: 0;
+  /* height: 100px; */
+  /* transition: background-color 3s ease-in-out, color 0.4s ease-in-out; */
+  transition: 2s;
+
+}
+
+#abh2:hover {
+  background-color: green;
+  color: white;
+  /* height: 400px; */
+}
+
+
+/* news */
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  /* Align items with space between them */
+  padding: 20px;
+}
+
+#latest_update ul li {
+  font-size: 20px;
+  /* text-align: center; */
+
+}
+
+
+.aboutus {
+  flex: 1;
+  /* Take up available space */
+  margin-right: 20px;
+  /* Add some space between containers */
+  padding-right: 10px;
+}
+
+#latest_update {
+  flex: 1;
+  /* Take up available space */
+  margin-top: 0;
+  padding-top: 0;
+}
+
+/* Style for the updates list */
+#latest_update ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 15px;
+
+
+
+  /* border: 2px solid red; */
+  /* padding-bottom: 100px; */
+
+
+}
+
+#latest_update ul li {
+  margin-bottom: 10px;
+  padding: 10px;
+  /* Add padding for better readability */
+  border-bottom: 1px solid #ccc;
+  /* Add border between list items */
+  border: 2px solid cornflowerblue;
+  margin-left: 0;
+  padding-left: 10px;
+
+
+}
+
+/* Additional styling for the Latest Updates heading */
+#h1news {
+  font-size: 24px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  /* margin-left: -2cm; */
+  margin-left: 15px;
+
+}
+
+
+/* Different background colors for each update item */
+#latest_update ul li:nth-child(1) {
+  background-color: #ffadad;
+  /* Light Red */
+}
+
+#latest_update ul li:nth-child(2) {
+  background-color: #ffd6a5;
+  /* Light Orange */
+}
+
+#latest_update ul li:nth-child(3) {
+  background-color: #fdffb6;
+  /* Light Yellow */
+}
+
+#latest_update ul li:nth-child(4) {
+  background-color: #caffbf;
+  /* Light Green */
+}
+
+#latest_update ul li:nth-child(5) {
+  background-color: #9bf6ff;
+  /* Light Blue */
+}
+
+#h1news {
+  font-size: 30px;
+  text-align: center;
+  background-color: blue;
+  color: white;
+  border-radius: 4px;
+  /* border: 2px solid red; */
+
+}
+
+
+/* Additional styling for the Latest Updates heading */
+
+/* .conatiners {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-around; */
+/* justify-content: space-evenly; */
+/* justify-content: center; */
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Align items with space between them */
+    padding: 20px;
+  }
+
+  #latest_update ul li {
+    font-size: 20px;
+    /* text-align: center; */
+
+  }
+
+
+
+
+  #latest_update {
+    flex: 1;
+    /* Take up available space */
+  }
+
+  /* Style for the updates list */
+  #latest_update ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  #latest_update ul li {
+    margin-bottom: 10px;
+    padding: 10px;
+    /* Add padding for better readability */
+    border-bottom: 1px solid #ccc;
+    /* Add border between list items */
+  }
+
+  /* Additional styling for the Latest Updates heading */
+
+
+  /* Different background colors for each update item */
+  #latest_update ul li:nth-child(1) {
+    background-color: #ffadad;
+    /* Light Red */
+  }
+
+  #latest_update ul li:nth-child(2) {
+    background-color: #ffd6a5;
+    /* Light Orange */
+  }
+
+  #latest_update ul li:nth-child(3) {
+    background-color: #fdffb6;
+    /* Light Yellow */
+  }
+
+  #latest_update ul li:nth-child(4) {
+    background-color: #caffbf;
+    /* Light Green */
+  }
+
+  #latest_update ul li:nth-child(5) {
+    background-color: #9bf6ff;
+    /* Light Blue */
+  }
+
+  #h1news {
+    font-size: 20px;
+    text-align: center;
+    background-color: blue;
+    color: white;
+    border-radius: 4px;
+
+
+  }
+
+  .aboutus {
+    background-color: #9bf6ff;
+    font-size: 18px;
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* width: 100%; */
+    padding-right: 10px;
+    padding-left: 10px3;
+
+
+
+    border-radius: 4px;
+  }
+
+
+
+}
+
+/* footer css */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+* {
+  font-family: Open Sans;
+}
+
+section {
+  width: 100%;
+  display: inline-block;
+  background: #333;
+  height: 50vh;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.footer-distributed {
+  background: #666;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+  width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3 {
+  color: #ffffff;
+  font: normal 36px 'Open Sans', cursive;
+  margin: 0;
+}
+
+.footer-distributed h3 span {
+  color: lightseagreen;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+  color: #ffffff;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+
+.footer-distributed .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  font-weight: 400;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+  color: white;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+  width: 35%;
+}
+
+.footer-distributed .footer-center i {
+  background-color: #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+  display: inline-block;
+  color: #ffffff;
+  font-weight: 400;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+  color: lightseagreen;
+  text-decoration: none;
+  ;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight: 300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+  width: 20%;
+}
+
+.footer-distributed .footer-company-about {
+  line-height: 20px;
+  color: white;
+  font-size: 15px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+  display: block;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+  margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #33383b;
+  border-radius: 2px;
+
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+.ticker-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.ticker-wrapper {
+  width: 100%;
+  padding-left: 100%;
+  background-color: gray;
+  color: white;
+  font-size: 20px;
+}
+
+@keyframes ticker {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.ticker-transition {
+  display: inline-block;
+  white-space: nowrap;
+  padding-right: 100%;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: ticker;
+  animation-duration: 20s;
+}
+
+.ticker-transition:hover {
+  animation-play-state: running;
+  cursor: pointer;
+}
+
+.ticker-item {
+  display: inline-block;
+  padding: 0 2rem;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+  .footer-distributed {
+    font: bold 14px sans-serif;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i {
+    margin-left: 0;
+  }
+
+  .image-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .image-container img {
+    display: block;
+    width: 100%;
+    transition: transform 0.5s ease;
+  }
+
+}
+
+.bt {
+  font-weight: bold;
+}
+
+.kidsmutlidrop {
+  display: none;
+  padding-left: -10cm;
+}
+
+.kids:hover.kidsmutlidrop {
+  display: inline;
+  padding-left: -10cm;
+}
+
+#corporate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  height: 45px;
+  /* width: 100%; */
+  padding: 15px;
+  /* width: 1200px; */
+  border-radius: 0px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  /* overflow-x: hidden; */
+  font-weight: bold;
+  /* padding-bottom: 2px; */
+}
+
+#linkcor {
+  color: white;
+  /* Initial color */
+  text-decoration: none;
+  transition: color 0.2s;
+  /* Smooth transition */
+
+
+
+}
+
+#linkcor:hover {
+  color: green;
+  /* Color on hover */
+}
+
+#linkcor1 {
+  color: white;
+  /* Initial color */
+  text-decoration: none;
+  transition: color 0.2s;
+  /* Smooth transition */
+  cursor: pointer;
+
+  transition: color 0.2s;
+  /* Smooth transition */
+  /* transition: cubic-bezier(0.455, 0.03, 0.515, 0.955) */
+}
+
+#linkcor1:hover {
+  color: green;
+  /* Color on hover */
+  transition: 0.3s;
+  /* animation-fill-mode: both; */
+  /* color-scheme:initial; */
+
+}
+
+.aboutus1 {
+  position: relative;
+  background-color: plum;
+  color: white;
+  font-size: 0px;
+  margin: 5px;
+  padding: 10px 30px 10px;
+  border-radius: 4px;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  /* font-family: "Roboto", sans-serif; */
+  font-family: "Poetsen One", sans-serif;
+
+  height: 10px;
+  transition: 5s;
+  transition-timing-function: ease-out;
+
+
+}
+
+.aboutus1:hover {
+  display: block;
+  height: 300px;
+  font-size: 22px;
+  color: white;
+  background-color: rgba(128, 0, 128, 0.726);
+}
+
+.poetsen-one-regular {
+  font-family: "Poetsen One", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+h2{
+  text-align: center;
+  background-color: pink;
+  border-radius: 4px;
+  margin: 4px;
+  padding: 5px;
+}
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div formf{
+  border-radius: 5px;
+  background-color: #730dc7;
+  padding: 20px;
+  margin: 30px;
+}
+form{
+  padding: 18px;
+  padding-top: 2px;
+  font-size: 18px;
+  background-color:rgba(192, 192, 192, 0.26);
+  /* background-color: palevioletred; */
+  /* opacity: .8; */
+}
+
+option{
+  font-size: 20px;
+}
+
+
+input::placeholder {
+  font-weight: bold;
+  font-size: 19px;
+  opacity: 0.5;
+  /* color: red; */
+}
+.inputr{
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.fran{
+  text-align: center;
+  color: green;
+  font-size: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 0;
+  padding-top: 2px;
+  margin: 0;
+  background-color:rgba(192, 192, 192, 0.26);
+}
+@media(max-width:880px){
+  
+  #linkcor {
+    font-size: 13px;
+    color: white;
+    /* Initial color */
+    text-decoration: none;
+    transition: color 0.2s;
+    /* Smooth transition */
+  
+  
+  
+  }
+  
+  #linkcor:hover {
+    color: green;
+    /* Color on hover */
+  }
+  
+  #linkcor1 {
+    color: white;
+    font-size: 13px;
+    cursor: pointer;
+    /* Initial color */
+    text-decoration: none;
+    transition: color 0.2s;
+    /* Smooth transition */
+    cursor: pointer;
+  
+    transition: color 0.2s;
+    /* Smooth transition */
+    /* transition: cubic-bezier(0.455, 0.03, 0.515, 0.955) */
+  }
+  
+  #linkcor1:hover {
+    color: green;
+    /* Color on hover */
+    transition: 0.3s;
+    /* animation-fill-mode: both; */
+    /* color-scheme:initial; */
+  
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    overflow-x: hidden;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    /* background-color: #bbb; */
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  #abh1 {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba(135, 207, 235, 0.425);
+    color: red;
+    border-radius: 4px;
+    padding: 8px;
+    margin-top: 0;
+    height: 80px;
+    /* transition: background-color 3s ease-in-out, color 0.4s ease-in-out; */
+    transition: 2s;
+  
+  }
+  
+  #abh1:hover {
+    font-size: 22px;
+    background-color: purple;
+    color: white;
+    height: 880px;
+  }
+   
+
+}
